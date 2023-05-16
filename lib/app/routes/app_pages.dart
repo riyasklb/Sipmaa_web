@@ -6,9 +6,13 @@
 import 'package:get/get.dart';
 import 'package:reg_login/app/modules/authentication/signin/views/signin.dart';
 
-import '../modules/authentication/signin/views/signin.dart';
-import '../modules/authentication/signin/views/signin.dart';
-import '../modules/authentication/signin/views/signin.dart';
+import '../../views/home_screen.dart';
+import '../modules/authentication/OTP/views/otp.dart';
+import '../modules/authentication/forgotPassword/views/forgotpassword.dart';
+import '../modules/authentication/register/views/registerscreen.dart';
+import '../modules/authentication/register/views/register.dart';
+import '../modules/authentication/register/views/registersplash.dart';
+
 
 part 'app_routes.dart';
 
@@ -23,6 +27,34 @@ class AppPages {
       page: () => const SignInView(),
       // binding: SignInBinding(),
     ),
-    
-  ];
+    GetPage(
+      name: _Paths.FORGOT_PASSWORD,
+      page: () => const FORGOTPASSWORD(),
+      // binding: SignInBinding(),
+ ), 
+ GetPage(
+      name: _Paths.REGISTER_VIEWS,
+      page: () => const  REGISTERVIEWS(),
+      // binding: SignInBinding(),
+    ),
+    GetPage(
+      name: _Paths.OTP_VIEWS,
+      page: () => const  OTPVIEWS(),
+      // binding: SignInBinding(),
+    ), 
+    GetPage(
+      name: _Paths.Resgister_2,
+      page: () => const  Resgister2(),
+      // binding: SignInBinding(),
+    ),
+     GetPage(
+      name: _Paths.Resgister_Splash,
+      page: () => const  Registersplash(),
+      // binding: SignInBinding(),
+    ),
+    GetPage(
+      name: _Paths.HOME_PAGE,
+      page: () => const HOMEPAGE(),
+      // binding: SignInBinding(),
+    ), ];
 }
