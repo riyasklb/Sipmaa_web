@@ -13,6 +13,9 @@ abstract class Routes {
   static const OTP_VIEWS = _Paths.OTP_VIEWS;
   static const Resgister_2 = _Paths.Resgister_2;
   static const Resgister_Splash = _Paths.Resgister_Splash;
+  static const Profile_Screen = _Paths.Profile_Screen;
+  static const Settings_page = _Paths.Settings_page;
+  static const Change_password = _Paths.Change_password;
 }
 
 abstract class _Paths {
@@ -24,4 +27,8 @@ abstract class _Paths {
   static const OTP_VIEWS = '/otp-views';
   static const Resgister_2 = '/register-2';
   static const Resgister_Splash = '/resgister-splash';
- static const HOME_PAGE ='/home-screen';}
+  static const HOME_PAGE = '/home-screen';
+  static const Profile_Screen = '/profile-screen';
+  static const Settings_page = '/settings-page';
+  static const Change_password = '/change-password';
+}
