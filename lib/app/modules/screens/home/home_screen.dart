@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:reg_login/app/modules/screens/views/friends_widget.dart';
-import 'package:reg_login/app/modules/screens/views/home/widgets.dart';
-import 'package:reg_login/constands.dart';
+import 'package:reg_login/app/data/components/constands/views/friends_widget.dart';
+import 'package:reg_login/app/modules/screens/home/widgets.dart';
+import 'package:reg_login/app/data/components/constands.dart';
 
-import '../../../../../widget/search_field.dart';
+import '../../../../widget/search_field.dart';
 import 'controler/controler.dart';
 
 class HomePage extends StatefulWidget {

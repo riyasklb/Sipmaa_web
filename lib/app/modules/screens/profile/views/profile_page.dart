@@ -3,7 +3,7 @@ import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/route_manager.dart';
 
-import '../../../../../constands.dart';
+import '../../../../data/components/constands.dart';
 import '../../../../../widget/search_field.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -22,7 +22,8 @@ class _ProfileScreenState extends State<ProfileScreen> {
     'assets/images/Group 89.png',
     'assets/images/Group 89.png',
     'assets/images/Group 89.png',
-    'assets/images/Group 89.png','assets/images/Rectangle 807.png'
+    'assets/images/Group 89.png',
+    'assets/images/Rectangle 807.png'
   ];
   @override
   Widget build(BuildContext context) {
@@ -45,7 +46,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
             textController: textController,
           ),
           IconButton(
-              onPressed: () =>Get.toNamed('/settings-page'),
+              onPressed: () => Get.toNamed('/settings-page'),
               icon: Icon(
                 Icons.settings_outlined,
                 color: Colors.black,
@@ -56,8 +57,9 @@ class _ProfileScreenState extends State<ProfileScreen> {
                 Icons.notifications_outlined,
                 color: Colors.black,
               )),
-          InkWell(onTap: () => Get.toNamed( '/sign-in'),
-            child: Image.asset('assets/images/profile.png')),
+          InkWell(
+              onTap: () => Get.toNamed('/sign-in'),
+              child: Image.asset('assets/images/profile.png')),
         ],
       ),
       body: Row(
@@ -505,17 +507,23 @@ class _ProfileScreenState extends State<ProfileScreen> {
                   children: [
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      children: [Container(
+                      children: [
+                        Container(
                           height: 60,
                           width: 120,
-                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
-                            color: kblue),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              color: kblue),
                           child: Center(
-                            child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
                                   'Friends',
-                                  style: TextStyle(color: kwhite, fontSize: 16,fontWeight: FontWeight.w600),
+                                  style: TextStyle(
+                                      color: kwhite,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600),
                                 ),
                                 Text(
                                   '4.4T',
@@ -527,17 +535,23 @@ class _ProfileScreenState extends State<ProfileScreen> {
                               ],
                             ),
                           ),
-                        ),Container(
+                        ),
+                        Container(
                           height: 60,
                           width: 120,
-                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
-                            color: kblue),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              color: kblue),
                           child: Center(
-                            child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
                                   'Poster',
-                                  style: TextStyle(color: kwhite, fontSize: 16,fontWeight: FontWeight.w600),
+                                  style: TextStyle(
+                                      color: kwhite,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600),
                                 ),
                                 Text(
                                   '5.5k',
@@ -550,18 +564,22 @@ class _ProfileScreenState extends State<ProfileScreen> {
                             ),
                           ),
                         ),
-                        
                         Container(
                           height: 60,
                           width: 120,
-                          decoration: BoxDecoration(borderRadius: BorderRadius.circular(15),
-                            color: kblue),
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(15),
+                              color: kblue),
                           child: Center(
-                            child: Column(mainAxisAlignment: MainAxisAlignment.center,
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
                               children: [
                                 Text(
                                   'Likes',
-                                  style: TextStyle(color: kwhite, fontSize: 16,fontWeight: FontWeight.w600),
+                                  style: TextStyle(
+                                      color: kwhite,
+                                      fontSize: 16,
+                                      fontWeight: FontWeight.w600),
                                 ),
                                 Text(
                                   '2.5k',
@@ -579,7 +597,6 @@ class _ProfileScreenState extends State<ProfileScreen> {
                     SizedBox(
                       height: 8,
                     ),
-                   
                   ],
                 ),
                 Padding(

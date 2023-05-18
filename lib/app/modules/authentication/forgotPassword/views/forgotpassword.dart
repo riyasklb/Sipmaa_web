@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/src/widgets/placeholder.dart';
 
-import '../../../../../constands/constands.dart';
-import '../../../../../constands/formfield.dart';
+import '../../../../data/components/constands/constands.dart';
+import '../../../../data/components/constands/formfield.dart';
 
 class FORGOTPASSWORD extends StatelessWidget {
   const FORGOTPASSWORD({super.key});
@@ -38,7 +38,8 @@ class FORGOTPASSWORD extends StatelessWidget {
                 ),
                 ksizedbox30,
                 Text('Enter Email Addreass or Mobile Number',
-                    style: TextStyle(fontWeight: FontWeight.w600, fontSize: 18)),
+                    style:
+                        TextStyle(fontWeight: FontWeight.w600, fontSize: 18)),
                 Padding(
                   padding: const EdgeInsets.all(12.0),
                   child: TextformfieldWidget(
@@ -75,7 +76,8 @@ class FORGOTPASSWORD extends StatelessWidget {
               ],
             ),
           ),
-         Image.asset('assets/images/Asset 11 4.png')  ],
+          Image.asset('assets/images/Asset 11 4.png')
+        ],
       ),
     );
   }

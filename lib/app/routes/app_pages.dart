@@ -4,11 +4,12 @@
 
 import 'package:get/get.dart';
 import 'package:reg_login/app/modules/authentication/signin/views/signin.dart';
+import 'package:reg_login/app/modules/screens/Settings/controller/settings_controller.dart';
 
-import '../modules/screens/Settings/views/change_password.dart';
+import '../modules/screens/Settings/views/widgets/change_password.dart';
 import '../modules/screens/Settings/views/settings.dart';
 import '../modules/screens/profile/views/profile_page.dart';
-import '../modules/screens/views/home/home_screen.dart';
+import '../modules/screens/home/home_screen.dart';
 import '../modules/authentication/OTP/views/otp.dart';
 import '../modules/authentication/forgotPassword/views/forgotpassword.dart';
 import '../modules/authentication/register/views/registerscreen.dart';
@@ -57,18 +58,20 @@ class AppPages {
       page: () => const HomePage(),
       // binding: SignInBinding(),
     ),
-   GetPage(
+    GetPage(
       name: _Paths.Profile_Screen,
-      page: () => const ProfileScreen (),
+      page: () => const ProfileScreen(),
       // binding: SignInBinding(),
     ),
-      GetPage(
+    GetPage(
       name: _Paths.Settings_page,
-      page: () => const SettingsPage(), 
-      // binding: SignInBinding(),
-    ),GetPage(
+      page: () => const SettingsPage(),
+      // binding: SettingsController(),
+    ),
+    GetPage(
       name: _Paths.Change_password,
-      page: () => const Changepassword (),
+      page: () => const Changepassword(),
       // binding: SignInBinding(),
-    ),];
+    ),
+  ];
 }

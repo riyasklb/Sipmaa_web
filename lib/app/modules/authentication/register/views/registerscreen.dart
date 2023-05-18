@@ -4,20 +4,21 @@ import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:get/get_core/get_core.dart';
 import 'package:get/get_navigation/get_navigation.dart';
 
-import '../../../../../constands/constands.dart';
-import '../../../../../constands/formfield.dart';
+import '../../../../data/components/constands/constands.dart';
+import '../../../../data/components/constands/formfield.dart';
 
 class REGISTERVIEWS extends StatelessWidget {
   const REGISTERVIEWS({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return  Scaffold(backgroundColor: kblue,
+    return Scaffold(
+      backgroundColor: kblue,
       body: Center(
         child: SingleChildScrollView(
-          child: Container(color: kwhite,
+          child: Container(
+            color: kwhite,
             width: 500,
-           
             child: Column(
               children: [
                 Padding(
@@ -40,7 +41,8 @@ class REGISTERVIEWS extends StatelessWidget {
                       style: ktextstyle,
                     ),
                     ksizedbox10,
-                    TextformfieldWidget(text: 'First Name', textt: 'First Name'),
+                    TextformfieldWidget(
+                        text: 'First Name', textt: 'First Name'),
                     TextformfieldWidget(text: 'Last Name', textt: 'Last Name'),
                     Padding(
                       padding: const EdgeInsets.all(10.0),
@@ -169,9 +171,9 @@ class REGISTERVIEWS extends StatelessWidget {
                                 borderRadius: BorderRadius.circular(10.0),
                               ),
                             ),
-                            onPressed: () =>Get.toNamed('/otp-views'),
-                             // Get.off(otp_page());
-                            
+                            onPressed: () => Get.toNamed('/otp-views'),
+                            // Get.off(otp_page());
+
                             child: Text(
                               'Register',
                               style: TextStyle(
